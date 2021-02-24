@@ -21,7 +21,7 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 import java.util.Timer;
 
-public class webme extends AppCompatActivity {
+public class Webme extends AppCompatActivity {
     Timer timer;
     WebView webView;
     private RelativeLayout internet_layout;

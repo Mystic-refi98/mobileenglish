@@ -16,7 +16,9 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Mobileenglish">
-        <activity android:name="com.jpc.mobileenglish.webme"></activity>
+        <activity android:name="com.jpc.mobileenglish.Webme"></activity>
+        <activity android:name=".MainMenu"></activity>
+        <activity android:name=".Program"></activity>
 
         <!--
                Set to true if your app is Standalone, that is, it does not require the handheld

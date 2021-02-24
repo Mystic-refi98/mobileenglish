@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this,webme.class);
+                Intent intent = new Intent(MainActivity.this,MainMenu.class);
                 startActivity(intent);
                 finish();
 

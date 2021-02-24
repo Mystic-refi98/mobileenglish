@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Program"
+    >
+
+
+    <Button
+        android:id="@+id/be"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#007065"
+        android:fontFamily="sans-serif"
+        android:text="Business English"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold">
+    </Button>
+
+    <Button
+        android:id="@+id/ge"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#007065"
+        android:fontFamily="sans-serif"
+        android:text="General English"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold">
+
+    </Button>
+
+    <Button
+        android:id="@+id/toeic"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="-345dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#007065"
+        android:fontFamily="sans-serif"
+        android:text="TOEIC Preparation"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold">
+    </Button>
+
+    <Button
+        android:id="@+id/toefl"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#007065"
+        android:fontFamily="sans-serif"
+        android:text="TOEFL Preparation"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/headingprogram"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="-350dp"
+        android:layout_marginTop="40dp"
+
+        android:fontFamily="sans-serif-medium"
+        android:text="What you like to try?"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+</LinearLayout>
