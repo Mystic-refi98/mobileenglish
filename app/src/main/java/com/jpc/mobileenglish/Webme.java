@@ -104,7 +104,7 @@ setTitle("Anyone, Anywhere, Anytime");
             dialog.getWindow().getAttributes().windowAnimations = android.R.style.Animation_Dialog;
 
             //inisiasi
-            Button btnTryAgain = dialog.findViewById(R.id.button);
+            Button btnTryAgain = dialog.findViewById(R.id.btn_see_program);
             //perform Click
             btnTryAgain.setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -74,4 +74,16 @@
         >
 
     </Button>
+
+    <ImageView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        app:srcCompat="@drawable/about_logo"
+        
+        >
+
+    </ImageView>
 </LinearLayout>
