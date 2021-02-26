@@ -17,7 +17,7 @@
             android:layout_gravity="center"
             android:layout_x="156dp"
             android:layout_y="186dp"
-            app:srcCompat="@drawable/be_detail" />
+            app:srcCompat="@drawable/ielts_detail" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/btn_signin_be"
+                android:id="@+id/btn_signin_ielts"
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="60dp"
@@ -45,7 +45,7 @@
                 android:textColor="#FFFFFF" />
 
             <Button
-                android:id="@+id/btn_back_be"
+                android:id="@+id/btn_back_ielts"
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="25dp"
