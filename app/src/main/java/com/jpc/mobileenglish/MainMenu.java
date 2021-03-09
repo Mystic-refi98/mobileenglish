@@ -1,11 +1,12 @@
 package com.jpc.mobileenglish;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -13,7 +14,9 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+
 
 public class MainMenu extends AppCompatActivity{
     private Button btnsignin;
@@ -24,6 +27,7 @@ public class MainMenu extends AppCompatActivity{
         startActivity(intent);
     }
     protected void onCreate(Bundle savedInstanceState) {
+
         requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_menu);
@@ -31,22 +35,30 @@ public class MainMenu extends AppCompatActivity{
         getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         getSupportActionBar().hide(); //ini juga
 
-        btnsignin = (Button) findViewById(R.id.signin);
-        btntrial = (Button) findViewById(R.id.trial);
-
+        Button btnsignin = (Button)findViewById(R.id.signin);
         btnsignin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(MainMenu.this, Webme.class);
-                startMyActivity(myIntent);
+            public void onClick(View v) {
+                Webme();
             }
         });
 
+    //    btnsignin = (Button) findViewById(R.id.signin);
+        btntrial = (Button) findViewById(R.id.trial);
+
+  /*      btnsignin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent_signin = new Intent(MainMenu.this, Webme.class);
+                startMyActivity(intent_signin);
+            }
+        });
+*/
         btntrial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(MainMenu.this, Program.class);
-                startMyActivity(myIntent);
+                Intent intent_trial = new Intent(MainMenu.this, Program.class);
+                startMyActivity(intent_trial);
             }
         });
 
@@ -60,7 +72,7 @@ public class MainMenu extends AppCompatActivity{
 
     }
 public void AboutMenu(){
-        Dialog aboutMenu = new Dialog(MainMenu.this);
+        final Dialog aboutMenu = new Dialog(MainMenu.this);
         aboutMenu.requestWindowFeature(Window.FEATURE_NO_TITLE);
         aboutMenu.setContentView(R.layout.about_menu);
 
@@ -69,8 +81,9 @@ public void AboutMenu(){
     aboutMenu.setCancelable(false);
     //Set height and weight
 
-    aboutMenu.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
-            WindowManager.LayoutParams.WRAP_CONTENT);
+    aboutMenu.getWindow().setLayout(1920,1441);
+    // ge.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
+    //        WindowManager.LayoutParams.WRAP_CONTENT);
 
     aboutMenu.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
@@ -92,5 +105,73 @@ public void AboutMenu(){
 
 }
 
+public void Webme(){
+    //connectivityManager
+    ConnectivityManager cm = (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+
+    //get active network
+    NetworkInfo networkInfo = cm.getActiveNetworkInfo();
+
+    //cekstatusinet
+
+    if (networkInfo == null || !networkInfo.isConnected() || !networkInfo.isAvailable()) {
+        //when inet is inactive
+
+        //dialog
+        Dialog dialog = new Dialog(this);
+
+        // //set content view
+
+        dialog.setContentView(R.layout.no_internet);
+
+        //set outside touch
+        dialog.setCanceledOnTouchOutside(false);
+        dialog.setCancelable(false);
+
+        //Set height and weight
+
+        dialog.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
+                WindowManager.LayoutParams.WRAP_CONTENT);
+
+        //set transparan
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        //animasi
+        dialog.getWindow().getAttributes().windowAnimations = android.R.style.Animation_Dialog;
+
+        //inisiasi
+        Button btnTryAgain = dialog.findViewById(R.id.btn_see_program);
+        //perform Click
+        btnTryAgain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recreate();
+
+            }
+        });
+
+        Button btnBack = dialog.findViewById(R.id.btn_back_noinet);
+        //perform Click
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+
+            }
+        });
+
+        //mucnul dialog
+        dialog.show();
+
+    } else {
+        Intent intent_signin = new Intent(MainMenu.this, Webme.class);
+        startMyActivity(intent_signin);
+
+
+    }
+
+
+
+}
 
 }

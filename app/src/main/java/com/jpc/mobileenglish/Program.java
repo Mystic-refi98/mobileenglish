@@ -90,8 +90,8 @@ public class Program extends AppCompatActivity{
 
     }
 
-    public void AboutPrograms() {
-        Dialog aboutPrograms = new Dialog(Program.this);
+ final public void AboutPrograms() {
+        final Dialog aboutPrograms = new Dialog(Program.this);
         aboutPrograms.requestWindowFeature(Window.FEATURE_NO_TITLE);
         aboutPrograms.setContentView(R.layout.about_programs);
 
@@ -100,8 +100,9 @@ public class Program extends AppCompatActivity{
         aboutPrograms.setCancelable(false);
         //Set height and weight
 
-        aboutPrograms.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
-                WindowManager.LayoutParams.WRAP_CONTENT);
+        aboutPrograms.getWindow().setLayout(1920,1441);
+        // ge.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
+        //        WindowManager.LayoutParams.WRAP_CONTENT);
 
         aboutPrograms.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
@@ -123,8 +124,8 @@ public class Program extends AppCompatActivity{
 
     }
 
-    public void AboutContactus() {
-        Dialog Contactus = new Dialog(Program.this);
+  final public void AboutContactus() {
+        final Dialog Contactus = new Dialog(Program.this);
         Contactus.requestWindowFeature(Window.FEATURE_NO_TITLE);
         Contactus.setContentView(R.layout.contact_us);
 
@@ -133,8 +134,9 @@ public class Program extends AppCompatActivity{
         Contactus.setCancelable(false);
         //Set height and weight
 
-        Contactus.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
-                WindowManager.LayoutParams.WRAP_CONTENT);
+        Contactus.getWindow().setLayout(1920,1441);
+        // ge.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
+        //        WindowManager.LayoutParams.WRAP_CONTENT);
 
         Contactus.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
@@ -156,8 +158,8 @@ public class Program extends AppCompatActivity{
 
     }
 
-    public void BusinessEnglish() {
-        Dialog be = new Dialog(Program.this);
+    final public void BusinessEnglish() {
+        final Dialog be = new Dialog(Program.this);
         be.requestWindowFeature(Window.FEATURE_NO_TITLE);
         be.setContentView(R.layout.be_screen);
 
@@ -199,8 +201,8 @@ public class Program extends AppCompatActivity{
 
     }
 
-    public void GeneralEnglish() {
-        Dialog ge = new Dialog(Program.this);
+    final public void GeneralEnglish() {
+        final Dialog ge = new Dialog(Program.this);
         ge.requestWindowFeature(Window.FEATURE_NO_TITLE);
         ge.setContentView(R.layout.ge_screen);
 
@@ -242,8 +244,8 @@ public class Program extends AppCompatActivity{
 
     }
 
-    public void Toeic() {
-        Dialog toeic = new Dialog(Program.this);
+  final public void Toeic() {
+      final Dialog toeic = new Dialog(Program.this);
         toeic.requestWindowFeature(Window.FEATURE_NO_TITLE);
         toeic.setContentView(R.layout.toeic_screen);
 
@@ -285,8 +287,8 @@ public class Program extends AppCompatActivity{
 
     }
 
-    public void Ielts() {
-        Dialog ielts = new Dialog(Program.this);
+    final public void Ielts() {
+     final   Dialog ielts = new Dialog(Program.this);
         ielts.requestWindowFeature(Window.FEATURE_NO_TITLE);
         ielts.setContentView(R.layout.ielts_screen);
 
@@ -328,8 +330,8 @@ public class Program extends AppCompatActivity{
 
     }
 
-    public void Pbt() {
-        Dialog pbt = new Dialog(Program.this);
+    final public void Pbt() {
+     final   Dialog pbt = new Dialog(Program.this);
         pbt.requestWindowFeature(Window.FEATURE_NO_TITLE);
         pbt.setContentView(R.layout.pbt_screen);
 
@@ -371,8 +373,8 @@ public class Program extends AppCompatActivity{
 
     }
 
-    public void Ibt() {
-        Dialog ibt = new Dialog(Program.this);
+    final public void Ibt() {
+     final   Dialog ibt = new Dialog(Program.this);
         ibt.requestWindowFeature(Window.FEATURE_NO_TITLE);
         ibt.setContentView(R.layout.ibt_screen);
 

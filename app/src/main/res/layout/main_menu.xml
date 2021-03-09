@@ -5,21 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".MainMenu">
+    tools:context=".MainMenu"
+    android:theme="@style/Theme.AppCompat.Light"
+    >
 
 
        <ImageView
         android:id="@+id/img_mainmenu2"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
         android:layout_gravity="center"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
         android:layout_marginBottom="200dp"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/main_menu_2"
+        app:srcCompat="@drawable/img_mainmenu"
         tools:layout_editor_absoluteX="55dp" />
 
 
@@ -28,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="-250dp"
+        android:layout_marginLeft="-280dp"
         android:layout_marginTop="50dp"
         android:fontFamily="cursive"
         android:text="Anyone, Anywhere, Anytime"
@@ -50,8 +52,6 @@
         android:textColor="#FFFFFF"
         android:textStyle="bold"
 
-        android:background="@drawable/roundedbutton"
-
         >
 
     </Button>
@@ -60,7 +60,6 @@
         android:id="@+id/trial"
         android:layout_width="180dp"
         android:layout_height="50dp"
-        android:background="@drawable/roundedbutton"
         android:backgroundTint="#FF9800"
         android:fontFamily="sans-serif"
         android:text="Try our programs"

@@ -32,12 +32,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:layout_marginBottom="5dp"
-                android:layout_x="158dp"
-                android:layout_y="514dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="-75dp"
                 android:background="#009688"
                 android:onClick="ReconnectWeb"
-                android:text="Try to Connect"
+                android:text="Retry"
+                android:textAllCaps="false"
+
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_back_noinet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#424242"
+                android:onClick="Back"
+                android:text="Back"
                 android:textAllCaps="false"
 
                 android:textColor="#FFFFFF" />
