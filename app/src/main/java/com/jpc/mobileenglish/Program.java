@@ -100,7 +100,7 @@ public class Program extends AppCompatActivity{
         aboutPrograms.setCancelable(false);
         //Set height and weight
 
-        aboutPrograms.getWindow().setLayout(1920,1441);
+        aboutPrograms.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
         // ge.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
         //        WindowManager.LayoutParams.WRAP_CONTENT);
 
@@ -134,7 +134,7 @@ public class Program extends AppCompatActivity{
         Contactus.setCancelable(false);
         //Set height and weight
 
-        Contactus.getWindow().setLayout(1920,1441);
+        Contactus.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
         // ge.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
         //        WindowManager.LayoutParams.WRAP_CONTENT);
 
@@ -168,7 +168,7 @@ public class Program extends AppCompatActivity{
         be.setCancelable(false);
         //Set height and weight
 
-        be.getWindow().setLayout(1920,1441);
+        be.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
        // ge.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
         //        WindowManager.LayoutParams.WRAP_CONTENT);
 
@@ -211,7 +211,7 @@ public class Program extends AppCompatActivity{
         ge.setCancelable(false);
         //Set height and weight
 
-        ge.getWindow().setLayout(1920,1441);
+        ge.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
         // ge.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
         //        WindowManager.LayoutParams.WRAP_CONTENT);
 
@@ -254,7 +254,7 @@ public class Program extends AppCompatActivity{
         toeic.setCancelable(false);
         //Set height and weight
 
-        toeic.getWindow().setLayout(1920,1441);
+        toeic.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
         // ge.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
         //        WindowManager.LayoutParams.WRAP_CONTENT);
 
@@ -297,7 +297,7 @@ public class Program extends AppCompatActivity{
         ielts.setCancelable(false);
         //Set height and weight
 
-        ielts.getWindow().setLayout(1920,1441);
+        ielts.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
         // ge.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
         //        WindowManager.LayoutParams.WRAP_CONTENT);
 
@@ -340,7 +340,7 @@ public class Program extends AppCompatActivity{
         pbt.setCancelable(false);
         //Set height and weight
 
-        pbt.getWindow().setLayout(1920,1441);
+        pbt.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
         // ge.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
         //        WindowManager.LayoutParams.WRAP_CONTENT);
 
@@ -383,7 +383,7 @@ public class Program extends AppCompatActivity{
         ibt.setCancelable(false);
         //Set height and weight
 
-        ibt.getWindow().setLayout(1920,1441);
+        ibt.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
         // ge.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
         //        WindowManager.LayoutParams.WRAP_CONTENT);
 

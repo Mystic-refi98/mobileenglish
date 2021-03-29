@@ -1,5 +1,6 @@
 package com.jpc.mobileenglish;
 
+import android.app.ActionBar;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
@@ -81,7 +82,7 @@ public void AboutMenu(){
     aboutMenu.setCancelable(false);
     //Set height and weight
 
-    aboutMenu.getWindow().setLayout(1920,1441);
+    aboutMenu.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
     // ge.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
     //        WindowManager.LayoutParams.WRAP_CONTENT);
 
@@ -145,7 +146,8 @@ public void Webme(){
         btnTryAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                recreate();
+                Intent intent_signin = new Intent(MainMenu.this, Webme.class);
+                startMyActivity(intent_signin);
 
             }
         });

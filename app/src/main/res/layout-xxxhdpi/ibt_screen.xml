@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/internet_layout"
+
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:background="@drawable/dialog_bg">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_x="156dp"
+            android:layout_y="186dp"
+            app:srcCompat="@drawable/ibt_detail" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:background="#00FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_signin_ibt"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="-65dp"
+                android:layout_x="158dp"
+                android:layout_y="514dp"
+                android:background="#009688"
+                android:backgroundTint="#009688"
+                android:onClick="AboutPrograms"
+                android:text="Try it"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_back_ibt"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="-10dp"
+                android:layout_x="158dp"
+                android:layout_y="514dp"
+                android:background="#99424242"
+                android:backgroundTint="#99424242"
+                android:onClick="AboutPrograms"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

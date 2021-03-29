@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout14"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Program">
+
+
+    <Button
+        android:id="@+id/be"
+        android:layout_width="164dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="11dp"
+        android:backgroundTint="#80C51F1F"
+        android:fontFamily="sans-serif"
+        android:text="Business English"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingprogram"></Button>
+
+    <Button
+        android:id="@+id/ge"
+        android:layout_width="164dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#80007065"
+        android:fontFamily="sans-serif"
+        android:text="General English"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/be"
+        app:layout_constraintTop_toBottomOf="@+id/headingprogram">
+
+    </Button>
+
+    <Button
+        android:id="@+id/toeic"
+        android:layout_width="162dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="11dp"
+        android:backgroundTint="#80155DED"
+        android:fontFamily="sans-serif"
+        android:text="TOEIC Preparation"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ibt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/be"></Button>
+
+    <Button
+        android:id="@+id/ielts"
+        android:layout_width="164dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#80E8400C"
+        android:fontFamily="sans-serif"
+        android:text="IELTS Preparation"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pbt"
+        app:layout_constraintTop_toBottomOf="@+id/ibt">
+
+    </Button>
+
+    <Button
+        android:id="@+id/pbt"
+        android:layout_width="162dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="11dp"
+        android:backgroundTint="#804CAF50"
+        android:fontFamily="sans-serif"
+        android:text="PBT TOEFL Preparation"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ielts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toeic"></Button>
+
+    <Button
+        android:id="@+id/ibt"
+        android:layout_width="162dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#806A1E00"
+        android:fontFamily="sans-serif"
+        android:text="iBT TOEFL Preparation"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toeic"
+        app:layout_constraintTop_toBottomOf="@+id/ge">
+
+    </Button>
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="230dp"
+        android:backgroundTint="#016056"
+        android:fontFamily="sans-serif"
+        android:text="Need help? Contact us"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/headingprogram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="66dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="What would you like to try?"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/about_program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="315dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/about_logo"></ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
