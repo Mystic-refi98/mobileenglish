@@ -1,8 +1,11 @@
 package com.jpc.mobileenglish;
 
 import android.app.ActionBar;
+import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -23,6 +26,7 @@ public class MainMenu extends AppCompatActivity{
     private Button btnsignin;
     private Button btntrial;
     private ImageView imgabout;
+    private boolean doubleBackToExitPressedOnce;
 
     private void startMyActivity(Intent intent){
         startActivity(intent);
@@ -70,6 +74,8 @@ public class MainMenu extends AppCompatActivity{
                 AboutMenu();
             }
         });
+
+
 
     }
 public void AboutMenu(){
@@ -172,8 +178,58 @@ public void Webme(){
 
     }
 
-
-
 }
+
+    final public void Exit() {
+        final  Dialog de = new Dialog(MainMenu.this);
+        de.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        de.setContentView(R.layout.exit_app);
+
+        //set outside touch
+        de.setCanceledOnTouchOutside(false);
+        de.setCancelable(false);
+        //Set height and weight
+
+        de.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        // ge.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
+        //        WindowManager.LayoutParams.WRAP_CONTENT);
+
+        de.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        //animasi
+        de.getWindow().getAttributes().windowAnimations = android.R.style.Animation_Dialog;
+
+        Button btn_ya = (Button) de.findViewById(R.id.btn_ya_exit);
+        Button btn_tidak = (Button) de.findViewById(R.id.btn_tidak_exit);
+
+        btn_ya.setEnabled(true);
+        btn_tidak.setEnabled(true);
+
+        btn_ya.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                MainMenu.this.finish();
+                System.exit(0);
+                return;
+
+
+            }
+        });
+        btn_tidak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                de.dismiss();
+            }
+        });
+        de.show();
+
+    }
+
+
+    public void onBackPressed() {
+        Exit();
+    }
+
 
 }

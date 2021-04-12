@@ -17,12 +17,13 @@
             android:layout_gravity="center"
             android:layout_x="156dp"
             android:layout_y="186dp"
-            app:srcCompat="@drawable/no_internet" />
+            app:srcCompat="@drawable/no_internet2" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_marginBottom="38dp"
             android:background="#00FFFFFF"
             android:gravity="center"
             android:orientation="vertical">
@@ -31,12 +32,12 @@
                 android:id="@+id/btn_see_program"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
                 android:layout_marginLeft="70dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginBottom="-75dp"
                 android:background="#009688"
                 android:onClick="ReconnectWeb"
-                android:text="Retry"
+                android:text="Coba lagi"
                 android:textAllCaps="false"
 
                 android:textColor="#FFFFFF" />
@@ -50,7 +51,7 @@
                 android:layout_marginBottom="5dp"
                 android:backgroundTint="#424242"
                 android:onClick="Back"
-                android:text="Back"
+                android:text="Kembali"
                 android:textAllCaps="false"
 
                 android:textColor="#FFFFFF" />

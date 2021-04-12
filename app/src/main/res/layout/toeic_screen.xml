@@ -30,24 +30,25 @@
 
             <Button
                 android:id="@+id/btn_signin_toeic"
-                android:layout_width="80dp"
-                android:layout_height="40dp"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
                 android:layout_marginLeft="60dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="-65dp"
+                android:layout_marginBottom="-85dp"
                 android:layout_x="158dp"
                 android:layout_y="514dp"
                 android:background="#009688"
                 android:backgroundTint="#009688"
                 android:onClick="AboutPrograms"
-                android:text="Try it"
+                android:text="Coba"
+                android:textSize="11dp"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/btn_back_toeic"
-                android:layout_width="80dp"
-                android:layout_height="40dp"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginRight="60dp"
                 android:layout_marginBottom="-10dp"
@@ -56,10 +57,10 @@
                 android:background="#99424242"
                 android:backgroundTint="#99424242"
                 android:onClick="AboutPrograms"
-                android:text="Back"
+                android:text="Kembali"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
-                android:textSize="12dp" />
+                android:textSize="11dp" />
 
         </LinearLayout>
 

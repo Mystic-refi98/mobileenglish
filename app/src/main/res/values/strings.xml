@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Mobile English </string>
-    <string name="title_activity_webview">webview</string>
-    <!--
-    This string is used for square devices and overridden by hello_world in
-    values-round/strings.xml for round devices.
-    -->
-    <string name="hello_world">Hello Square World!</string>
+    <string name="app_name">Mobile English</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">Berikutnya</string>
+    <string name="skip">Lewati</string>
+    <string name="start">Mengerti</string>
+
+    
 </resources>

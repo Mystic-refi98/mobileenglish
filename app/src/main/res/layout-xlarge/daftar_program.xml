@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout14"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Program">
+
+
+    <Button
+        android:id="@+id/be"
+        android:layout_width="164dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#80C51F1F"
+        android:fontFamily="sans-serif"
+        android:text="Business English"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/headingprogram"
+        tools:layout_editor_absoluteX="205dp"></Button>
+
+    <Button
+        android:id="@+id/ge"
+        android:layout_width="164dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#80007065"
+        android:fontFamily="sans-serif"
+        android:text="General English"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/headingprogram"
+        tools:layout_editor_absoluteX="408dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/toeic"
+        android:layout_width="162dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#80155DED"
+        android:fontFamily="sans-serif"
+        android:text="TOEIC Preparation"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/be"></Button>
+
+    <Button
+        android:id="@+id/ielts"
+        android:layout_width="164dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="196dp"
+        android:backgroundTint="#80E8400C"
+        android:fontFamily="sans-serif"
+        android:text="IELTS Preparation"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pbt"
+        app:layout_constraintTop_toBottomOf="@+id/ibt">
+
+    </Button>
+
+    <Button
+        android:id="@+id/pbt"
+        android:layout_width="162dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#804CAF50"
+        android:fontFamily="sans-serif"
+        android:text="PBT TOEFL Preparation"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toeic"></Button>
+
+    <Button
+        android:id="@+id/ibt"
+        android:layout_width="162dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="196dp"
+        android:backgroundTint="#806A1E00"
+        android:fontFamily="sans-serif"
+        android:text="iBT TOEFL Preparation"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toeic"
+        app:layout_constraintTop_toBottomOf="@+id/ge">
+
+    </Button>
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="231dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="#016056"
+        android:fontFamily="sans-serif"
+        android:text="Butuh bantuan? hubungi Kami"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prakerja_me">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/headingprogram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="66dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Ingin coba program apa?"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/about_program"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="333dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/information"></ImageView>
+
+    <ImageView
+        android:id="@+id/prakerja_me"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="106dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pbt"
+        app:srcCompat="@drawable/prakerja_me"></ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

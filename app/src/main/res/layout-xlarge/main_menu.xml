@@ -5,7 +5,7 @@
     android:id="@+id/linearLayout6"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/bg_mainmenu"
     android:theme="@style/Theme.AppCompat.Light"
     tools:context=".MainMenu">
 
@@ -51,7 +51,7 @@
         android:backgroundTint="#007065"
         android:fontFamily="sans-serif"
         android:scaleType="center"
-        android:text="Sign in"
+        android:text="Login"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
@@ -67,31 +67,28 @@
         android:layout_width="224dp"
         android:layout_height="77dp"
         android:layout_marginStart="126dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="126dp"
-        android:layout_marginBottom="210dp"
         android:backgroundTint="#FF9800"
         android:fontFamily="sans-serif"
         android:scaleType="center"
-        android:text="Try our programs"
+        android:text="Coba program Kami"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signin"
-        app:layout_constraintVertical_bias="0.008">
+        app:layout_constraintTop_toBottomOf="@+id/signin">
 
     </Button>
 
     <ImageView
         android:id="@+id/about"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginStart="340dp"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="41dp"
         android:layout_marginBottom="8dp"
         android:scaleType="center"
@@ -101,7 +98,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/about_logo">
+        app:srcCompat="@drawable/information">
 
     </ImageView>
 </androidx.constraintlayout.widget.ConstraintLayout>

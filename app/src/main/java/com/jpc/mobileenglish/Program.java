@@ -3,15 +3,20 @@ package com.jpc.mobileenglish;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatDelegate;
 
@@ -29,6 +34,14 @@ public class Program extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 AboutPrograms();
+            }
+        });
+
+        ImageView prakerja = (ImageView)findViewById(R.id.prakerja_me);
+        prakerja.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                prakerja();
             }
         });
 
@@ -90,6 +103,7 @@ public class Program extends AppCompatActivity{
 
     }
 
+
  final public void AboutPrograms() {
         final Dialog aboutPrograms = new Dialog(Program.this);
         aboutPrograms.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -124,6 +138,25 @@ public class Program extends AppCompatActivity{
 
     }
 
+    final public void prakerja() {
+        ImageView prakerja_me = (ImageView)findViewById(R.id.prakerja_me);
+
+
+        prakerja_me.setEnabled(true);
+
+
+        prakerja_me.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://www.sekolah.mu/mitra/mobile-english";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
+            }
+        });
+
+    }
+
   final public void AboutContactus() {
         final Dialog Contactus = new Dialog(Program.this);
         Contactus.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -144,15 +177,35 @@ public class Program extends AppCompatActivity{
         Contactus.getWindow().getAttributes().windowAnimations = android.R.style.Animation_Dialog;
 
         Button btn_programs = (Button) Contactus.findViewById(R.id.btn_contact);
+      ImageView close = (ImageView) Contactus.findViewById(R.id.ic_close);
+
+
 
         btn_programs.setEnabled(true);
+        close.setEnabled(true);
 
         btn_programs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Contactus.dismiss();
+                //Contactus.dismiss();
+                Context context = null;
+
+                String number = "+62 8161329342"; // use country code with your phone number
+
+                String url = "https://api.whatsapp.com/send?phone="+number;
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
             }
         });
+
+      close.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              Contactus.
+                      dismiss();
+          }
+      });
 
         Contactus.show();
 
@@ -186,9 +239,10 @@ public class Program extends AppCompatActivity{
         btn_tryit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Program.this,Webme.class);
+                String url = "https://mobileenglish.learnsocial.online/platform";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
                 startActivity(intent);
-                //be.dismiss();
             }
         });
         btn_back.setOnClickListener(new View.OnClickListener() {
@@ -229,9 +283,13 @@ public class Program extends AppCompatActivity{
         btn_tryit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Program.this,Webme.class);
-                startActivity(intent);
+                //Intent intent = new Intent(Program.this,Webme.class);
+                //startActivity(intent);
                 //be.dismiss();
+                String url = "https://mobileenglish.learnsocial.online/platform";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
             }
         });
         btn_back.setOnClickListener(new View.OnClickListener() {
@@ -272,9 +330,10 @@ public class Program extends AppCompatActivity{
         btn_tryit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Program.this,Webme.class);
+                String url = "https://mobileenglish.learnsocial.online/platform";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
                 startActivity(intent);
-                //be.dismiss();
             }
         });
         btn_back.setOnClickListener(new View.OnClickListener() {
@@ -315,9 +374,10 @@ public class Program extends AppCompatActivity{
         btn_tryit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Program.this,Webme.class);
+                String url = "https://mobileenglish.learnsocial.online/platform";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
                 startActivity(intent);
-                //be.dismiss();
             }
         });
         btn_back.setOnClickListener(new View.OnClickListener() {
@@ -358,9 +418,10 @@ public class Program extends AppCompatActivity{
         btn_tryit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Program.this,Webme.class);
+                String url = "https://mobileenglish.learnsocial.online/platform";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
                 startActivity(intent);
-                //be.dismiss();
             }
         });
         btn_back.setOnClickListener(new View.OnClickListener() {
@@ -401,9 +462,10 @@ public class Program extends AppCompatActivity{
         btn_tryit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Program.this,Webme.class);
+                String url = "https://mobileenglish.learnsocial.online/platform";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
                 startActivity(intent);
-                //be.dismiss();
             }
         });
         btn_back.setOnClickListener(new View.OnClickListener() {
@@ -415,6 +477,51 @@ public class Program extends AppCompatActivity{
         ibt.show();
 
     }
+ /*   final public void Back() {
+        final  Dialog de = new Dialog(Program.this);
+        de.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        de.setContentView(R.layout.dialog_exit);
+
+        //set outside touch
+        de.setCanceledOnTouchOutside(false);
+        de.setCancelable(false);
+        //Set height and weight
+
+        de.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        // ge.getWindow().setLayout(WindowManager.LayoutParams.WRAP_CONTENT,
+        //        WindowManager.LayoutParams.WRAP_CONTENT);
+
+        de.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        //animasi
+        de.getWindow().getAttributes().windowAnimations = android.R.style.Animation_Dialog;
+
+        Button btn_ya = (Button) de.findViewById(R.id.btn_ya_exit);
+        Button btn_tidak = (Button) de.findViewById(R.id.btn_tidak_exit);
+
+        btn_ya.setEnabled(true);
+        btn_tidak.setEnabled(true);
+
+        btn_ya.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_back = new Intent(Program.this,MainMenu.class);
+                startActivity(intent_back);
+                Program.this.finish();
+            }
+        });
+        btn_tidak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                de.dismiss();
+            }
+        });
+        de.show();
+
+    } */
 
 
+    //public void onBackPressed() {
+     //Back();
+    //}
 }

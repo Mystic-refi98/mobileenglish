@@ -7,7 +7,7 @@
     android:background="#C3BEBE"
     android:layout_gravity="center"
     android:foregroundTint="#FFFFFF"
-    tools:context=".activity_2"
+    tools:context=".Webme"
 
     >
 

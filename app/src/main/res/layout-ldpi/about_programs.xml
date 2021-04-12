@@ -38,7 +38,7 @@
                 android:background="#009688"
                 android:backgroundTint="#216EF3"
                 android:onClick="AboutPrograms"
-                android:text="See programs"
+                android:text="Lihat program"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF" />
 

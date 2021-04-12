@@ -13,16 +13,22 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Mobile English"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Mobileenglish"
-
-        >
-        <activity android:name="com.jpc.mobileenglish.Webme"></activity>
+                >
+        <activity android:name="com.jpc.mobileenglish.Webme"
+            android:parentActivityName=".MainMenu"
+        ></activity>
+        <activity android:name=".activity_welcome"></activity>
         <activity android:name=".MainMenu"></activity>
         <activity android:name=".Program"></activity>
+        <activity android:name=".welcome1"></activity>
+        <activity android:name=".welcome2"></activity>
+        <activity android:name=".welcome3"></activity>
+        <activity android:name=".welcome4"></activity>
 
 
 

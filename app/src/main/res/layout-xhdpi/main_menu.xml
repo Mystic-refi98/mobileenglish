@@ -5,32 +5,34 @@
     android:id="@+id/linearLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/bg_mainmenu"
     android:theme="@style/Theme.AppCompat.Light"
     tools:context=".MainMenu">
 
 
     <ImageView
         android:id="@+id/img_mainmenu2"
-        android:layout_width="574dp"
-        android:layout_height="570dp"
-        android:layout_marginStart="97dp"
-        android:layout_marginEnd="97dp"
-        android:adjustViewBounds="true"
-        android:scaleType="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="326dp"
+        android:layout_height="316dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="10dp"
 
+        android:layout_marginEnd="43dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193"
+        app:layout_constraintTop_toBottomOf="@+id/about"
         app:srcCompat="@drawable/img_mainmenu" />
 
     <TextView
         android:id="@+id/txt_slogan1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="17dp"
         android:fontFamily="cursive"
         android:scaleType="center"
         android:text="Anyone, Anywhere, Anytime"
@@ -38,28 +40,28 @@
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/signin"
-        tools:layout_editor_absoluteX="147dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_mainmenu2" />
 
     <Button
         android:id="@+id/signin"
         android:layout_width="302dp"
         android:layout_height="69dp"
         android:layout_marginStart="340dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="340dp"
-        android:layout_marginBottom="31dp"
         android:backgroundTint="#007065"
         android:fontFamily="sans-serif"
         android:scaleType="center"
-        android:text="Sign in"
+        android:text="Login"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/trial"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_mainmenu2">
+        app:layout_constraintTop_toBottomOf="@+id/txt_slogan1">
 
     </Button>
 
@@ -68,38 +70,37 @@
         android:layout_width="298dp"
         android:layout_height="75dp"
         android:layout_marginStart="302dp"
+        android:layout_marginTop="34dp"
         android:layout_marginEnd="301dp"
-        android:layout_marginBottom="144dp"
         android:backgroundTint="#FF9800"
         android:fontFamily="sans-serif"
         android:scaleType="center"
-        android:text="Try our programs"
+        android:text="Coba program Kami"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin">
 
     </Button>
 
     <ImageView
         android:id="@+id/about"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginStart="641dp"
-        android:layout_marginTop="58dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="97dp"
         android:scaleType="center"
         app:layout_constraintBottom_toTopOf="@+id/img_mainmenu2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintHorizontal_bias="0.86"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.166"
-        app:srcCompat="@drawable/about_logo">
+        app:srcCompat="@drawable/information">
 
     </ImageView>
 </androidx.constraintlayout.widget.ConstraintLayout>

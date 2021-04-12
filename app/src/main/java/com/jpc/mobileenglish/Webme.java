@@ -46,6 +46,7 @@ public class Webme extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.webview_me);
 setTitle("Anyone, Anywhere, Anytime");
+getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 //internet connection check
         // Define ActionBar object
@@ -67,7 +68,6 @@ setTitle("Anyone, Anywhere, Anytime");
         webView.getSettings().setDomStorageEnabled(true);
         webView.getSettings().setJavaScriptEnabled(true);
         getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
@@ -133,7 +133,7 @@ setTitle("Anyone, Anywhere, Anytime");
             dialog.show();
 
                    } else {
-            webView.loadUrl("https://mobileenglish.learnsocial.online/platform");
+            webView.loadUrl("https://mobileenglish.learnsocial.online/");
 
 
         }

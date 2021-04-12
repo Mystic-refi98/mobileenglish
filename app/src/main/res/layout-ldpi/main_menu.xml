@@ -5,7 +5,7 @@
     android:id="@+id/linearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/bg_mainmenu"
     android:theme="@style/Theme.AppCompat.Light"
     tools:context=".MainMenu">
 
@@ -41,43 +41,39 @@
 
     <Button
         android:id="@+id/signin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="264dp"
-        android:layout_marginEnd="116dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
         android:backgroundTint="#007065"
         android:fontFamily="sans-serif"
         android:scaleType="center"
-        android:text="Sign in"
+        android:text="Login"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/img_mainmenu2">
 
     </Button>
 
     <Button
         android:id="@+id/trial"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginBottom="64dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="57dp"
         android:backgroundTint="#FF9800"
         android:fontFamily="sans-serif"
         android:scaleType="center"
-        android:text="Try our programs"
+        android:text="Coba program kami"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin">
 
     </Button>
 
@@ -94,7 +90,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/about_logo">
+        app:srcCompat="@drawable/information">
 
     </ImageView>
 </androidx.constraintlayout.widget.ConstraintLayout>
