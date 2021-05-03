@@ -26,7 +26,7 @@ public class Program extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.daftar_program);
         getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-        getSupportActionBar().hide(); //ini juga
+       getSupportActionBar().hide(); //ini juga
 
 
         ImageView aboutprograms = (ImageView)findViewById(R.id.about_program);

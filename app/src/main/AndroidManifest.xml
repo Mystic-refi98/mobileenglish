@@ -22,9 +22,13 @@
         <activity android:name="com.jpc.mobileenglish.Webme"
             android:parentActivityName=".MainMenu"
         ></activity>
-        <activity android:name=".activity_welcome"></activity>
+        <activity android:name=".activity_welcome"
+            android:theme="@style/Theme.AppCompat"
+            ></activity>
         <activity android:name=".MainMenu"></activity>
-        <activity android:name=".Program"></activity>
+        <activity android:name=".Program"
+            android:theme="@style/Theme.AppCompat"
+            ></activity>
         <activity android:name=".welcome1"></activity>
         <activity android:name=".welcome2"></activity>
         <activity android:name=".welcome3"></activity>

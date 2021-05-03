@@ -13,6 +13,7 @@
         android:id="@+id/be"
         android:layout_width="164dp"
         android:layout_height="74dp"
+        android:layout_marginStart="205dp"
         android:layout_marginTop="24dp"
         android:backgroundTint="#80C51F1F"
         android:fontFamily="sans-serif"
@@ -21,14 +22,17 @@
         android:textColor="#FFFFFF"
         android:textSize="16dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/headingprogram"
-        tools:layout_editor_absoluteX="205dp"></Button>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingprogram">
+
+    </Button>
 
     <Button
         android:id="@+id/ge"
         android:layout_width="164dp"
         android:layout_height="74dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="196dp"
         android:backgroundTint="#80007065"
         android:fontFamily="sans-serif"
         android:text="General English"
@@ -36,8 +40,8 @@
         android:textColor="#FFFFFF"
         android:textSize="16dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/headingprogram"
-        tools:layout_editor_absoluteX="408dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingprogram">
 
     </Button>
 

@@ -31,10 +31,11 @@ public class activity_welcome extends AppCompatActivity {
     private PrefManager prefManager;
     private MyViewPagerAdapter myViewPagerAdapter;
 
+
     Timer timer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         // Checking for first time launch - before calling setContentView()
         prefManager = new PrefManager(this);
@@ -47,7 +48,7 @@ public class activity_welcome extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-        getSupportActionBar().hide(); //ini juga
+        //getSupportActionBar().hide(); //ini juga
         setContentView(R.layout.activity_welcome);
 
         viewPager = (ViewPager) findViewById(R.id.view_pager);
